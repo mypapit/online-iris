@@ -1,0 +1,16 @@
+input.slider {
+
+
+width:80%;
+
+
+
+}
+
+canvas {
+
+max-width: 600px;
+padding-top: 20px;
+border:1px dashed #333;
+
+}

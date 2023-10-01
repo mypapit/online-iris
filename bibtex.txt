@@ -1,0 +1,1 @@
+ @misc{ismail_2022, title={Iris Dataset Machine Learning Demo}, url={https://demo.mobilepit.com/ai/iris}, journal={Mypapit}, publisher={mobilepit.com}, author={Ismail, Mohammad Hafiz}, year={2022}, month={Jan}} 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+  <title>Iris Dataset Machine Learning Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Mohammad Hafiz bin Ismail" />
+  <!-- <meta name="dc.identifier" value="doi:10.5281/zenodo.6584368" /> -->
+  <meta name="description" content="Iris Dataset Machine Learning Demo" />
+  <meta property="og:title" content="Online Iris Dataset Machine Learning Demo - by Mohammad Hafiz (mypapit)" />
+  <meta property="og:description" content="An online demonstration of Machine Learning with Multiple Model on Iris dataset" />
+  <meta property="og:image" content="fake-harumanis.png" />
+  <meta name="DC.Publisher" content="Mohammad Hafiz" />
+  <meta property="og:site_name" content="Iris Dataset Machine Learning Demo Web Application" />
+  <meta name="DC.Language" content="en" />
+  <meta name="DC.Title" content="Iris Dataset Machine Learning Demo Web Application" />
+  <meta name="DC.description" content="An online demonstration of Machine Learning with Multiple Model on Iris dataset " />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="canonical" href="https://demo.mobilepit.com/ai/fakeharumanis/" />
+  <link rel="icon" sizes="192x192" href="fake-harumanis.png" />
+  <link rel="apple-touch-icon" href="fake-harumanis.png" />
+
+
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+</head>
+
+<body class="loading">
+
+  <div class="jumbotron text-center">
+    <h1>Iris Dataset Machine Learning Demo</h1>
+    <small>&copy; 2022, Mohammad Hafiz bin Ismail</small>
+  </div>
+  <main role="main" class="container">
+<p>
+<label for="slength">Sepal Length</label><input type="number" name="slength" id="slength" max="8.0" min="3.0" step="0.1"/><br />
+<label for="swidth">Sepal Width</label><input type="number" name="swidth" id="swidth" max="5.0" min="1.0" step="0.1"  /><br />
+<label for="plength">Petal Length</label><input type="number" name="plength" id="plength"  max="8.0" min="0.7" step="0.1" /><br />
+<label for="pwidth">Petal Width</label><input type="number" name="pwidth" id="pwidth"max="3.0" min="0.1" step="0.1"  /><br />
+<br />
+<input type="button" id="button" value="Predict" onclick="tfpredict()" />
+</p>
+
+<div>
+<h2>Result Tensorflow</h2>
+<span id="prediction">
+
+</span>
+
+<h2>Result J48</h2>
+<span id="j48">
+
+</span>
+</div>
+
+<div id="chart">
+
+    <canvas id="radar" style="max-width:400px"></canvas>
+
+</div>
+
+
+
+
+  </main>
+  <div id="footer" class="text-center">
+    <p>Read more information about <a href="readme.html">Iris Dataset Machine Learning Demo</a></p>
+  </div>
+  <script src="index.js"> </script>
+
+
+</body>
+
+</html>
